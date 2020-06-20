@@ -31,6 +31,14 @@ git push
 
 ### clone a repository
 copy the link for the repo and cd into the dir you want to copy it then run:
+
 git clone <url>
+
 e.g. for this repo:
+
 git clone https://github.com/abhiyanbeta/gittest.git
+
+### pulling
+if another dev makes a change to your repo, you can pull it down by running:
+
+git pull
