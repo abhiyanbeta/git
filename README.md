@@ -27,4 +27,10 @@ git push -u origin master
 git status
 
 ### once you've added your repo, can just run
-git push 
+git push
+
+### clone a repository
+copy the link for the repo and cd into the dir you want to copy it then run:
+git clone <url>
+e.g. for this repo:
+git clone https://github.com/abhiyanbeta/gittest.git
