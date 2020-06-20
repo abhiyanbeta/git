@@ -25,3 +25,6 @@ git push -u origin master
 
 ### check status/changes
 git status
+
+### once you've added your repo, can just run
+git push 
