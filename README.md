@@ -42,3 +42,16 @@ git clone https://github.com/abhiyanbeta/gittest.git
 if another dev makes a change to your repo, you can pull it down by running:
 
 git pull
+
+
+# Branches
+
+The default branch used is 'master' but you can create new branches. You can view which branch you are currently on by running:
+
+git status
+
+### creating a branch
+git branch <name of branch>
+
+### change branches
+git checkout <name of branch>
