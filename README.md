@@ -56,7 +56,7 @@ git branch <name of branch>
 ### change branches
 git checkout <name of branch>
 
-### merge Branches
+### merge branches
 You can merge your other branch into the main master branch by running:
 
 git merge <name of branch>
