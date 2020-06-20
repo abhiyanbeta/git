@@ -60,3 +60,29 @@ git checkout <name of branch>
 You can merge your other branch into the main master branch by running:
 
 git merge <name of branch>
+
+# Ignore
+
+You can specify git to ignore certain files. First create a .gitignore file by running:
+
+touch .gitignore
+
+Open into the file using a texteditor and add the full name of the file with it's extension into separate lines of the file.
+
+Save and publish the .gitignore file.
+
+### Ignoring mac ds store files
+
+For example, I used this to ignore the weird random ds store file that gets created on a mac for some reason.
+
+Of course, using stackoverflow:
+https://stackoverflow.com/questions/107701/how-can-i-remove-ds-store-files-from-a-git-repository
+
+Create and add ds store to gitignore file:
+
+echo .DS_Store >> .gitignore
+
+Then publish changes:
+
+git add .gitignore
+git commit -m "ds store removed"
