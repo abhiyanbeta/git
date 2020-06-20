@@ -3,6 +3,10 @@
 I'm following Traversy's tutorial on git for beginners:
 https://www.youtube.com/watch?v=SWYqp7iY_Tc
 
+First I installed git using Homebrew:
+
+brew install git
+
 ### cd
 first cd into the local repo folder
 
