@@ -1,0 +1,71 @@
+<html><head><style>body {
+   color: black;
+}
+</style></head><body><h1 id="git-cheatsheet">Git Cheatsheet</h1>
+<h4 id="_how-to-use-git_"><em>How to use git</em></h4>
+<p>This is more of a cheatsheet as a reminder/reference, rather than a tutorial. If you do not understand something, I suggest first checking out the links in the sources at the bottom of this file.</p>
+<p>Also, this is a very beginner cheatsheet, since I am only getting started with git myself.</p>
+<hr>
+<h3 id="install-git">Install git</h3>
+<p>If you don&#39;t have git installed already, install git using <a href="https://brew.sh">Homebrew</a>:</p>
+<p><code>brew install git</code></p>
+<h3 id="initialising-git">Initialising git</h3>
+<p>Open Terminal and change into the local repo folder using <code>cd</code>. Then initialise git:</p>
+<p><code>git init</code></p>
+<h3 id="adding-all-files-to-git">Adding all files to git</h3>
+<p><code>git add .</code></p>
+<h3 id="commit-changes">Commit changes</h3>
+<p><code>git commit -m &quot;message&quot;</code></p>
+<h3 id="create-github-repo">Create github repo</h3>
+<p>First create a new github repository and then run the following using the url of the repository:</p>
+<p><code>git remote add origin &lt;url of repository&gt;</code></p>
+<h3 id="push-changes-into-your-repo">Push changes into your repo</h3>
+<p><code>git push -u origin master</code></p>
+<h3 id="pushing-changes-to-repo">Pushing changes to repo</h3>
+<p><code>git push</code></p>
+<hr>
+<h3 id="see-which-repo-you-are-currently-in">See which repo you are currently in</h3>
+<p><code>git remote show origin</code></p>
+<h3 id="check-status-changes">Check status/changes</h3>
+<p>At any time, you can check which files were modified by running:</p>
+<p><code>git status</code></p>
+<hr>
+<h3 id="clone-a-repo">Clone a repo</h3>
+<p>Copy the link for the repository from github and <code>cd</code> into the directory where you want to copy it. Then run:</p>
+<p><code>git clone &lt;url of repository&gt;</code></p>
+<h3 id="pulling-changes">Pulling changes</h3>
+<p>If another dev makes a change to your repo, or you make changes to your repo online on Github, you can pull it down by running:</p>
+<p><code>git pull</code></p>
+<h1 id="branches">Branches</h1>
+<p>The default branch used is <code>master</code> but you can create new branches. You can view which branch you are currently on by running:</p>
+<p><code>git status</code></p>
+<h3 id="creating-a-branch">Creating a branch</h3>
+<p><code>git branch &lt;name of branch&gt;</code></p>
+<h3 id="change-branches">Change branches</h3>
+<p><code>git checkout &lt;name of branch&gt;</code></p>
+<h3 id="merge-branches">Merge branches</h3>
+<p>You can merge your other branch into the main master branch by running:</p>
+<p><code>git merge &lt;name of branch&gt;</code></p>
+<h1 id="ignore">Ignore</h1>
+<p>You can specify git to ignore certain files. First create a <code>.gitignore</code> file by running:</p>
+<p><code>touch .gitignore</code></p>
+<p>Open the file using a text editor and add the full name of the file with it&#39;s extension into separate lines of the file.</p>
+<p>Then, save the file and publish changes:</p>
+<p><code>git add .gitignore</code>
+<code>git commit -m &quot;updated .gitignore&quot;</code>
+<code>git push</code></p>
+<h3 id="ignoring-mac-ds_store-files">Ignoring mac .DS_Store files</h3>
+<p>For example, I used this method to ignore the very annoying <code>.DS_Store</code> file that appears on Mac for some reason.</p>
+<p>If you don&#39;t have the <code>.gitignore</code> file already, you can create and add the file directly:</p>
+<p><code>echo .DS_Store &gt;&gt; .gitignore</code></p>
+<p>Then, save the file and publish changes:</p>
+<p><code>git add .gitignore</code>
+<code>git commit -m &quot;updated .gitignore&quot;</code>
+<code>git push</code></p>
+<hr>
+<h3 id="sources">Sources</h3>
+<ol>
+<li><a href="https://www.youtube.com/watch?v=SWYqp7iY_Tc">https://www.youtube.com/watch?v=SWYqp7iY_Tc</a></li>
+<li><a href="https://stackoverflow.com/questions/107701/how-can-i-remove-ds-store-files-from-a-git-repository">https://stackoverflow.com/questions/107701/how-can-i-remove-ds-store-files-from-a-git-repository</a></li>
+</ol>
+</body></html>
