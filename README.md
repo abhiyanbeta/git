@@ -1,92 +1,116 @@
-# How to use git
+# Git Cheatsheet
+#### _How to use git_
 
-I'm following Traversy's tutorial on git for beginners:
-https://www.youtube.com/watch?v=SWYqp7iY_Tc
+This is more of a cheatsheet as a reminder/reference, rather than a tutorial. If you do not understand something, I suggest first checking out the links in the sources at the bottom of this file.
 
-First I installed git using Homebrew:
+***
+### Install git
 
-brew install git
+If you don't have git installed already, install git using [Homebrew](https://brew.sh):
 
-### cd
-first cd into the local repo folder
+`brew install git`
 
-### initialises git
-git init
+### Initialising git
+Open Terminal and change into the local repo folder using `cd`. Then initialise git:
 
-### adds all the files
-git add .
+`git init`
 
-### commit the changes with a message
-git commit -m "tutorial"
+### Adding all files to git
+`git add .`
 
-### create github repo then run this to initialise
-git remote add origin <url of repository>
+### Commit changes
+`git commit -m "message"`
 
-### push the changes into your repo
-git push -u origin master
+### Create github repo
+First create a new github repository and then run the following using the url of the repository:
 
-(not sure what the -u flag does)
+`git remote add origin <url of repository>`
 
-### check status/changes
-git status
+### Push changes into your repo
 
-### once you've added your repo, can just run
-git push
+`git push -u origin master`
 
-### clone a repository
-copy the link for the repo and cd into the dir you want to copy it then run:
+### Pushing changes to repo
 
-git clone <url>
+`git push`
 
-e.g. for this repo:
+***
 
-git clone https://github.com/abhiyanbeta/gittest.git
+### See which repo you are currently in
 
-### pulling
-if another dev makes a change to your repo, you can pull it down by running:
+`git remote show origin`
 
-git pull
+### Check status/changes
+At any time, you can check which files were modified by running:
+
+`git status`
+
+***
+
+### Clone a repo
+
+Copy the link for the repository from github and `cd` into the directory where you want to copy it. Then run:
+
+`git clone <url of repository>`
+
+
+### Pulling changes
+If another dev makes a change to your repo, or you make changes to your repo online on Github, you can pull it down by running:
+
+`git pull`
 
 
 # Branches
 
-The default branch used is 'master' but you can create new branches. You can view which branch you are currently on by running:
+The default branch used is `master` but you can create new branches. You can view which branch you are currently on by running:
 
-git status
+`git status`
 
-### creating a branch
-git branch <name of branch>
+### Creating a branch
 
-### change branches
-git checkout <name of branch>
+`git branch <name of branch>`
 
-### merge branches
+### Change branches
+
+`git checkout <name of branch>`
+
+### Merge branches
 You can merge your other branch into the main master branch by running:
 
-git merge <name of branch>
+`git merge <name of branch>`
 
 # Ignore
 
-You can specify git to ignore certain files. First create a .gitignore file by running:
+You can specify git to ignore certain files. First create a `.gitignore` file by running:
 
-touch .gitignore
+`touch .gitignore`
 
-Open into the file using a texteditor and add the full name of the file with it's extension into separate lines of the file.
+Open the file using a text editor and add the full name of the file with it's extension into separate lines of the file.
 
-Save and publish the .gitignore file.
+Then, save the file and publish changes:
 
-### Ignoring mac ds store files
+`git add .gitignore`
+`git commit -m "updated .gitignore"`
+`git push`
 
-For example, I used this to ignore the weird random ds store file that gets created on a mac for some reason.
 
-Of course, using stackoverflow:
-https://stackoverflow.com/questions/107701/how-can-i-remove-ds-store-files-from-a-git-repository
+### Ignoring mac .DS_Store files
 
-Create and add ds store to gitignore file:
+For example, I used this method to ignore the very annoying `.DS_Store` file that appears on Mac for some reason.
 
-echo .DS_Store >> .gitignore
+If you don't have the `.gitignore` file already, you can create and add the file directly:
 
-Then publish changes:
+`echo .DS_Store >> .gitignore`
 
-git add .gitignore
-git commit -m "ds store removed"
+Then, save the file and publish changes:
+
+`git add .gitignore`
+`git commit -m "updated .gitignore"`
+`git push`
+
+***
+
+### Sources
+
+1. https://www.youtube.com/watch?v=SWYqp7iY_Tc
+1. https://stackoverflow.com/questions/107701/how-can-i-remove-ds-store-files-from-a-git-repository
