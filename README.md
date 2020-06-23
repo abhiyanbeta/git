@@ -3,6 +3,8 @@
 
 This is more of a cheatsheet as a reminder/reference, rather than a tutorial. If you do not understand something, I suggest first checking out the links in the sources at the bottom of this file.
 
+Also, this is a very beginner cheatsheet, since I am only getting started with git myself.
+
 ***
 ### Install git
 
