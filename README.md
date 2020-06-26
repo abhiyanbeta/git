@@ -110,9 +110,21 @@ Then, save the file and publish changes:
 `git commit -m "updated .gitignore"`
 `git push`
 
+### Adding a rule later
+
+If you already have a file checked in, and you want to ignore it, Git will not ignore the file if you add a rule later. In those cases, you must untrack the file first.
+
+So if you want add to ignore some directories in your local repository (which already exist) after editing `.gitignore` you want to run this on your root dir:
+
+```
+git rm --cached -r .
+git add .
+```
+
 ***
 
 ### Sources
 
 1. https://www.youtube.com/watch?v=SWYqp7iY_Tc
 1. https://stackoverflow.com/questions/107701/how-can-i-remove-ds-store-files-from-a-git-repository
+1. https://stackoverflow.com/questions/1470572/ignoring-any-bin-directory-on-a-git-project
