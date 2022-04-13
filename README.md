@@ -121,6 +121,19 @@ git rm --cached -r .
 git add .
 ```
 
+### Stage
+Sometimes you may see: There are no staged changes to commit.
+Would you like to stage all your changes and commit them directly?
+
+The stage is files that you mark to commit when you run git add . 
+If there are no files that you have marked to be on stage, this message will pop up. 
+
+More details:
+https://stackoverflow.com/questions/48545911/there-are-no-staged-changes-to-commit-dialog-box
+
+
+
+
 ***
 
 ### Sources
