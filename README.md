@@ -33,7 +33,7 @@ Where origin is the name of the remote. May be different in your case.
 
 ### Push changes into your repo
 
-`git push -u origin master`
+`git push -u origin main`
 
 Where origin is the name of the remote. May be different in your case. 
 
@@ -73,7 +73,7 @@ If another dev makes a change to your repo, or you make changes to your repo onl
 
 # Branches
 
-The default branch used is `master` but you can create new branches. You can view which branch you are currently on by running:
+The default branch used is `main` but you can create new branches. You can view which branch you are currently on by running:
 
 `git status`
 
@@ -86,7 +86,7 @@ The default branch used is `master` but you can create new branches. You can vie
 `git checkout <name of branch>`
 
 ### Merge branches
-You can merge your other branch into the main master branch by running:
+You can merge your other branch into the main branch by running:
 
 `git merge <name of branch>`
 
