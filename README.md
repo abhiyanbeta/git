@@ -28,9 +28,15 @@ First create a new github repository and then run the following using the url of
 
 `git remote add origin <url of repository>`
 
+Where origin is the name of the remote. May be different in your case. 
+
+
 ### Push changes into your repo
 
 `git push -u origin master`
+
+Where origin is the name of the remote. May be different in your case. 
+
 
 ### Pushing changes to repo
 
@@ -41,6 +47,9 @@ First create a new github repository and then run the following using the url of
 ### See which repo you are currently in
 
 `git remote show origin`
+
+Where origin is the name of the remote. May be different in your case. 
+
 
 ### Check status/changes
 At any time, you can check which files were modified by running:
